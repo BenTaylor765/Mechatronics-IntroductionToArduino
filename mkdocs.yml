@@ -1,0 +1,87 @@
+site_name: Introduction to Arduino Documentation
+
+plugins:
+   - glightbox
+
+
+extra_css:
+  - css/styles.css  # Path relative to the docs/ directory
+  - css/highlights.css
+  - css/tablesAndFigures.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
+
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - abbr
+  - pymdownx.snippets
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      auto_append:
+        - ./includes/abbreviations.md
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+nav:
+  - Introduction: index.md
+  - Background: Background.md
+  - Laptop / MacBook Disclaimer: Disclaimer.md
+  - Building the Robot: RobotBuild.md
+  - Introductory Exercises (Non-assessed): IntroExercises.md
+  - Basic Exercises (Assessed):
+    - LED Pattern: Ex1ledPattern.md
+    - Calibration of Potentiometer Angle: Ex2PotCalibration.md
+    - IR Sensor Measurement and Graph: Ex3IrSensor.md
+    - Driving a Servo Motor: Ex4DriveServoMotor.md
+    - DC Motor: Ex5DcMotor.md
+    - Encoders + Motor: Ex6EncodeMotor.md
+  - Advanced Exercises (Assessed):
+    - PI Control – Encoder Position: Ex7PiEncoder.md
+    - PI Control – IR Sensor Distance: Ex8PiIrDist.md
+    - PI Control – IR with Sequence: Ex9PiIrSequence.md
+  - Assessment: Assessment.md
+
+watch:
+  - includes
+
+theme: 
+  name: material
+  features:
+  - content.tooltips
+  - content.code.copy
+  - content.code.select
+  - content.code.annotate
+  palette: 
+  #Dark Mode
+  - scheme: slate
+    toggle: 
+      icon: material/weather-sunny
+      name: Dark Mode
+    primary: green
+    accent: deep purple
+
+  #Light Mode
+  - scheme: default
+    toggle: 
+      icon: material/weather-night
+      name: Light Mode
+    primary: blue
+    accent: deep orange
+
+
+
+  
