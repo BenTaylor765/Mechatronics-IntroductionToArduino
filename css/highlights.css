@@ -27,7 +27,7 @@ tr.yellow-row{
   }
   
   debugHL {
-    background-color: yellow;
+    background-color: none;
   }
 
   problemHL{
