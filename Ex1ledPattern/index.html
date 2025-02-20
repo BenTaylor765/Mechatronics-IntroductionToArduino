@@ -228,27 +228,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../Background/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Background
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../Disclaimer/" class="md-nav__link">
         
   
@@ -275,6 +254,27 @@
   
   <span class="md-ellipsis">
     Building the Robot
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Background/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Background
     
   </span>
   
@@ -400,10 +400,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Introduction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#part-1-led-sequence" class="md-nav__link">
     <span class="md-ellipsis">
       Part 1: LED Sequence
@@ -411,8 +410,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#part-2-potentiometer-control-of-the-sequence-rate" class="md-nav__link">
     <span class="md-ellipsis">
       Part 2: Potentiometer Control of the Sequence Rate
@@ -423,9 +422,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#section-1-the-read-the-potentiometer-test-program" class="md-nav__link">
+  <a href="#section-1-the-read-the-potentiometer-test-program-potino" class="md-nav__link">
     <span class="md-ellipsis">
-      Section 1: The Read the Potentiometer Test Program
+      Section 1: The Read the Potentiometer Test Program, POT.ino
     </span>
   </a>
   
@@ -444,8 +443,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#part-3-addition-of-a-pause-button" class="md-nav__link">
     <span class="md-ellipsis">
       Part 3: Addition of a Pause Button
@@ -453,9 +452,13 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-potino-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix: POT.INO Code
+    </span>
+  </a>
   
 </li>
       
@@ -746,10 +749,9 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Introduction">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#part-1-led-sequence" class="md-nav__link">
     <span class="md-ellipsis">
       Part 1: LED Sequence
@@ -757,8 +759,8 @@
   </a>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#part-2-potentiometer-control-of-the-sequence-rate" class="md-nav__link">
     <span class="md-ellipsis">
       Part 2: Potentiometer Control of the Sequence Rate
@@ -769,9 +771,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#section-1-the-read-the-potentiometer-test-program" class="md-nav__link">
+  <a href="#section-1-the-read-the-potentiometer-test-program-potino" class="md-nav__link">
     <span class="md-ellipsis">
-      Section 1: The Read the Potentiometer Test Program
+      Section 1: The Read the Potentiometer Test Program, POT.ino
     </span>
   </a>
   
@@ -790,8 +792,8 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#part-3-addition-of-a-pause-button" class="md-nav__link">
     <span class="md-ellipsis">
       Part 3: Addition of a Pause Button
@@ -799,9 +801,13 @@
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#appendix-potino-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Appendix: POT.INO Code
+    </span>
+  </a>
   
 </li>
       
@@ -834,12 +840,14 @@
 <p>Before starting these exercises, you should ensure that you have added the <abbr title="Light Emitting Diodes">LEDs</abbr>, the button and the potentiometer to the breadboards on the robot chassis, as suggested on <debugHL><a href="../RobotBuild/#BreadboardComps">Building the Robot: Fig. 6</a></debugHL>. Furthermore, you should ensure that your connections for these components are correct - suggested connections are shown in <debugHL><a href="../RobotBuild/#ArduinoConnect">Building the Robot: Table. 1</a></debugHL>.</p>
 </div>
 <p><problemHL>Can We get a Tinker CAD Drawing of the <abbr title="Light Emitting Diode">LED</abbr>, Potentiometer and Button Corcuit on Breadboards</problemHL></p>
-<p>A quick video demonstrating the final system is shown below:</p>
+<p>The following video is a quick demonstration of the final outcome from this exercise:</p>
+<figure>
 <div style="text-align: center;">
 <iframe id="kaltura_player" src='https://cdnapisec.kaltura.com/p/2103181/embedPlaykitJs/uiconf_id/53345422?iframeembed=true&amp;entry_id=1_a3eviyhm&amp;config%5Bprovider%5D=%7B%22widgetId%22%3A%221_4q6vxp1v%22%7D&amp;config%5Bplayback%5D=%7B%22startTime%22%3A0%7D'  style="width: 400px;height: 285px;border: 0;justify-content:center;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Placeholder - Quick Test Video"></iframe>
 </div>
-
-<h3 id="part-1-led-sequence">Part 1: <abbr title="Light Emitting Diode">LED</abbr> Sequence</h3>
+<figcaption>Video demonstrating the expected outcome from this exercise</figcaption>
+</figure>
+<h2 id="part-1-led-sequence">Part 1: <abbr title="Light Emitting Diode">LED</abbr> Sequence</h2>
 <p><a name="Part1"></a>
 During this part, you will write a program to create a repeating sequence of <abbr title="Light Emitting Diodes">LEDs</abbr>, with a fixed sequence time step, e.g. say every ½ second. A suggested <abbr title="Light Emitting Diode">LED</abbr> sequence is shown in <debugHL><a href="#ArduinoConnect">Table. 1</a></debugHL>. </p>
 <table>
@@ -861,7 +869,7 @@ During this part, you will write a program to create a repeating sequence of <ab
   <caption>Suggested simple repeating sequence, (counting-up in binary).</caption>
 </table>
 
-<p>We will not provide any example code to facilitate this exercise, you must create this code from scratch, possibly using some of the example code provided in the lab documentation or the built-in examples.</p>
+<p>We will not provide any example code to facilitate this exercise, you must create this code from scratch, possibly using some of the example code provided in the <debugHL><a href="../IntroExercises/#buttCode">Introductory Exercises</a></debugHL> or the built-in examples as inspiration.</p>
 <p><strong>Procedure:</strong></p>
 <ol>
 <li>Ensure that the circuit is correctly connected:<ul>
@@ -869,40 +877,37 @@ During this part, you will write a program to create a repeating sequence of <ab
 <li>Each of the cathodes of the <abbr title="Light Emitting Diodes">LEDs</abbr> should be connected through a 470Ω resistor to ground.</li>
 </ul>
 </li>
-<li>Write a program to change the pattern of the <abbr title="Light Emitting Diodes">LEDs</abbr> at a fixed rate, say every 0.5 seconds, and lop through the sequence continuously. We suggest using the sequence from <debugHL><a href="#ArduinoConnect">Table 1</a></debugHL>.</li>
+<li>Write a program to change the pattern of the <abbr title="Light Emitting Diodes">LEDs</abbr> at a fixed rate, say every ½ second, and loop through the sequence continuously. We suggest using the sequence from <debugHL><a href="#ArduinoConnect">Table 1</a></debugHL>.</li>
 <li>If you do not use the sequence provided in <debugHL><a href="#ArduinoConnect">Table 1</a></debugHL>, your sequence should have at least 8 patterns, some but not most may repeat.</li>
 <li>For this we suggest using a delay function to control the timing of the sequence. The rationale for this is that we will replace the bracket value on the <code>delay()</code> function with the <abbr title="Analogue to Digital Converter">ADC</abbr> read value, to control the speed of the sequence. </li>
 <li>Ensure that you save your code when you have completed this part.</li>
 </ol>
-<p>We will not provide any example code to facilitate this exercise, you must create this code from scratch, possibly using some of the example code provided in the lab documentation or the built-in examples.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>We Strongly recommend using the suggested connection and layout provided in this document because it will link conveniently with the discussions and the example code provided. Using the suggested also makes debugging your work easier because you will have a more familiar layout and code for the staff and <abbr title="Graduate Teaching Assistants">GTAs</abbr> search through.</p>
+<p>We strongly recommend using the suggested connection and layout provided in <debugHL><a href="../RobotBuild/#LEDPatternBuild">Building the Robot Document</a></debugHL> because it will link conveniently with the discussions and the example code provided. Using the suggested layout and connections also makes debugging your work easier because you will have a more familiar structure for the staff and <abbr title="Graduate Teaching Assistants">GTAs</abbr>.</p>
 </div>
-<h3 id="part-2-potentiometer-control-of-the-sequence-rate">Part 2: Potentiometer Control of the Sequence Rate</h3>
+<h2 id="part-2-potentiometer-control-of-the-sequence-rate">Part 2: Potentiometer Control of the Sequence Rate</h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>It is suggested in <debugHL><a href="../RobotBuild/#ArduinoConnect">Building the Robot/Table. 1</a></debugHL> that your potentiometer is connected to analogue pin A5.</p>
+<p>It is suggested in the <debugHL><a href="../RobotBuild/#LEDPatternBuild">Building the Robot Document</a></debugHL> that your potentiometer is connected to analogue pin A5.</p>
 </div>
 <p>This part of the exercise is split into two sub sections:</p>
 <ol>
-<li>Using the <debugHL><a href="https://drive.google.com/uc?id=12TfTMoRFA78SI2CmWXjNNQRFOFaW9haG">POT.ino</a></debugHL> test program to read the potentiometer value and display it on the serial monitor.</li>
-<li>Modifying the <abbr title="Light Emitting Diode">LED</abbr> sequence code so that the potentiometer value is used to control the sequence rate of the <abbr title="Light Emitting Diode">LED</abbr> sequence.</li>
+<li>Using the <debugHL><a href="#potInoCode">POT.ino</a></debugHL> test program to read the potentiometer value and display it on the serial monitor.</li>
+<li>Modifying the <abbr title="Light Emitting Diode">LED</abbr> sequence code so that the potentiometer value is used to control the pattern change rate of the <abbr title="Light Emitting Diode">LED</abbr> sequence.</li>
 </ol>
-<h4 id="section-1-the-read-the-potentiometer-test-program">Section 1: The Read the Potentiometer Test Program</h4>
-<p>The aim of the <debugHL><a href="https://drive.google.com/uc?id=12TfTMoRFA78SI2CmWXjNNQRFOFaW9haG">POT.ino</a></debugHL> test program is to show you how to an analogue value from a sensor, or other device, and use its value. In this example code you will read the voltage from a potentiometer, generate a <abbr title="Pulse Width Modulation">PWM</abbr> output to change the brightness of an <abbr title="Light Emitting Diode">LED</abbr>, and stream some data to the Serial Monitor. </p>
+<h3 id="section-1-the-read-the-potentiometer-test-program-potino">Section 1: The Read the Potentiometer Test Program, POT.ino</h3>
+<p>The aim of the <debugHL><a href="#potInoCode">POT.ino</a></debugHL> example code is to show you how to read an analogue value from a sensor, or other device, and use its value. In this example code you will read the voltage from a potentiometer, generate a <abbr title="Pulse Width Modulation">PWM</abbr> output to change the brightness of an <abbr title="Light Emitting Diode">LED</abbr>, and stream some data to the Serial Monitor. </p>
 <p><strong>Procedure:</strong></p>
 <ol>
-  <li>Using the following link: <debugHL><a href=https://drive.google.com/uc?id=12TfTMoRFA78SI2CmWXjNNQRFOFaW9haG)>POT.ino</a></debugHL>, download the potentiometer test program and save it into your working folder.</li>
-  <li>Ensure the LEDs are connected, as described in <debugHL>Part 1</debugHL></li>
-  <li>Ensure the potentiometer is connected into the circuit.</li>
-  <ul>
-    <li>Connect left hand pin of the potentiometer to GND and the 5V and the right hand pin to +5V.</li>
-    <li>It is suggested that the middle pin of the potentiometer is connected to the analogue A5 pin.</li>
-  </ul>
+<li>Copy the <debugHL><a href="#potInoCode">POT.ino</a></debugHL> code into a black Arduino sketch and save it into your working folder.</li>
+<li>Ensure the <abbr title="Light Emitting Diodes">LEDs</abbr> and potentiometer are connected into your circuit, as described in the <debugHL><a href="../RobotBuild/#LEDPatternBuild">Building the Robot Document</a></debugHL></li>
+<li>Ensure the potentiometer is connected into the circuit.<ul>
+<li>Connect left hand pin of the potentiometer to <abbr title="Electrical Ground or 0V">GND</abbr> and the 5V and the right hand pin to +5V.</li>
+<li>It is suggested that the middle pin of the potentiometer is connected to the analogue A5 pin.</li>
+</ul>
+</li>
 </ol>
-
-<p><problemHL>Refer to the Tinker CAD circuit</problemHL></p>
 <p>The analogue to digital converter, <abbr title="Analogue to Digital Converter">ADC</abbr>, inputs to the Arduino have 10 bits of resolution (i.e. 1024 different values). By default, they measure from ground (0V) to 5 volts. That means that the 0-5V range of the potentiometer will be proportionally mapped to the 0-1023 digital values range in the microcontroller. </p>
 <ol start=4>
   <li>Upload the program to the Arduino, then open the serial monitor and observe data being streamed to the terminal.</li>
@@ -914,7 +919,7 @@ During this part, you will write a program to create a repeating sequence of <ab
 <p>This example program uses the map() function to ‘map’ the <abbr title="Analogue to Digital Converter">ADC</abbr> measurement values between 0 and 1023, to a range of 0 to 255. This new range is required to write the <abbr title="Pulse Width Modulation">PWM</abbr> signal to change the <abbr title="Light Emitting Diode">LED</abbr> brightness – <abbr title="Pulse Width Modulation">PWM</abbr> will be covered in the next lab session, so for this example, just assume this is an analogue output from the Arduino.</p>
 <p>Look at the code and see how the map() command is used. The Arduino language reference for the map command can be found at:</p>
 <p><debugHL><a href="https://www.arduino.cc/reference/en/language/functions/math/map/" title="Map command in the Arduino reference documentation">https://www.arduino.cc/reference/en/language/functions/math/map/</a></debugHL> </p>
-<h4 id="section-2-integrate-the-potentiometer-value-into-your-led-sequence-program">Section 2: Integrate the Potentiometer Value Into Your <abbr title="Light Emitting Diode">LED</abbr> Sequence Program</h4>
+<h3 id="section-2-integrate-the-potentiometer-value-into-your-led-sequence-program">Section 2: Integrate the Potentiometer Value Into Your <abbr title="Light Emitting Diode">LED</abbr> Sequence Program</h3>
 <p>During this section you will integrate the reading of the potentiometer into the program for your <abbr title="Light Emitting Diode">LED</abbr> sequence, and use the <abbr title="Analogue to Digital Converter">ADC</abbr> value to control the delay function in the main loop.</p>
 <p><strong>Procedure:</strong></p>
 <ol>
@@ -923,16 +928,16 @@ During this part, you will write a program to create a repeating sequence of <ab
 <li>Ensure that you save your code when you have completed this section.</li>
 </ol>
 <p>When you rotate the potentiometer to the right, the sequence should speed up, and when you rotate the potentiometer to the left, the sequence should slow down. There should be a continuous variation in sequence speed proportional to the position of the potentiometer between the left and right extremes.</p>
-<h3 id="part-3-addition-of-a-pause-button">Part 3: Addition of a Pause Button</h3>
+<h2 id="part-3-addition-of-a-pause-button">Part 3: Addition of a Pause Button</h2>
 <p>During this part, you will implement the reading of the button on breadboard 1 and use the button value to pause the execution of the sequence.</p>
 <p><strong>Procedure:</strong></p>
 <ol>
-<li>Starting from your code that you completed in </debugHL><a href="#section-2-integrate-the-potentiometer-value-into-your-led-sequence-program">Part 2, section 2</a></debugHL>, implement a button read from the button on breadboard 1.</li>
+<li>Starting from your code that you completed in <debugHL><a href="#section-2-integrate-the-potentiometer-value-into-your-led-sequence-program">Part 2, section 2</a></debugHL>, implement a button read from the button on breadboard 1.</li>
 <li>Use this the pressed value of the button to hold the flow of execution until the button is released. </li>
 </ol>
-<p>When completed, your code should function as follows:</p>
+<p><strong>When completed, your code should function as follows:</strong></p>
 <ul>
-<li>The three <abbr title="Light Emitting Diodes">LEDs</abbr> should be flashing in a repeating sequence of at lease 8 different patterns</li>
+<li>The three <abbr title="Light Emitting Diodes">LEDs</abbr> should be flashing in a continuously repeating sequence of at lease 8 different patterns.</li>
 <li>When you rotate the potentiometer to the right, the sequence should speed up, and when you rotate the potentiometer to the left, the sequence should slow down. There should be a continuous variation in sequence speed proportional to the position of the potentiometer between the left and right extremes.</li>
 <li>When the button is pressed, the sequence should pause, but not reset.</li>
 </ul>
@@ -940,6 +945,35 @@ During this part, you will write a program to create a repeating sequence of <ab
 <p class="admonition-title">Now Get Your Work Marked by a <abbr title="Graduate Teaching Assistant">GTA</abbr></p>
 <p>Once you have completed your code and are satisfied with its operation, you should show your work to a <abbr title="Graduate Teaching Assistant">GTA</abbr> for marking.</p>
 </div>
+<h2 id="appendix-potino-code">Appendix: POT.INO Code</h2>
+<p><a name="potInoCode"></a></p>
+<div class="language-Arduino highlight"><span class="filename">POT.ino Arduino Code</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">// Global Name Space</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kr">int</span><span class="w"> </span><span class="n">potAnalogPin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// FSR is connected to analog 0</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="kr">int</span><span class="w"> </span><span class="n">LEDpin</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">11</span><span class="p">;</span><span class="w">      </span><span class="c1">// connect Red LED to pin 11 (PWM pin)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="kr">int</span><span class="w"> </span><span class="n">potReading</span><span class="p">;</span><span class="w">      </span><span class="c1">// the analog reading from the FSR resistor divider</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="kr">int</span><span class="w"> </span><span class="n">LEDbrightness</span><span class="p">;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="kr">void</span><span class="w"> </span><span class="nb">setup</span><span class="p">(</span><span class="kr">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="c1">// We&#39;ll send debugging information via the serial monitor</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">begin</span><span class="p">(</span><span class="mi">9600</span><span class="p">);</span><span class="w">   </span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nf">pinMode</span><span class="p">(</span><span class="n">LEDpin</span><span class="p">,</span><span class="w"> </span><span class="kr">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="kr">void</span><span class="w"> </span><span class="nb">loop</span><span class="p">(</span><span class="kr">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">  </span><span class="n">potReading</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">potAnalogPin</span><span class="p">);</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">  </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">print</span><span class="p">(</span><span class="s">&quot;Analog reading = &quot;</span><span class="p">);</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">  </span><span class="nf">Serial</span><span class="p">.</span><span class="nf">println</span><span class="p">(</span><span class="n">potReading</span><span class="p">);</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">  </span><span class="c1">// we&#39;ll need to change the range from the analog reading (0-1023) down to</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">  </span><span class="c1">//the range used by analogWrite (0-255) with map!</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">  </span><span class="n">LEDbrightness</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">map</span><span class="p">(</span><span class="n">potReading</span><span class="o">*</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1023</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">);</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">  </span><span class="c1">// LED gets brighter the harder you press</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">  </span><span class="nf">analogWrite</span><span class="p">(</span><span class="n">LEDpin</span><span class="p">,</span><span class="w"> </span><span class="n">LEDbrightness</span><span class="p">);</span><span class="w"> </span><span class="c1">// here you are using PWM !!!</span>
+</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="w">  </span><span class="nf">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="p">}</span>
+</span></code></pre></div>
 
 
 
