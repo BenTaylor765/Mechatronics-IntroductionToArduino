@@ -9,23 +9,25 @@
       
       
       
-        <link rel="prev" href="../AdvancedExercises/Ex9PiIrSequence/">
+        <link rel="prev" href="../Ex8PiEncoder/">
       
       
+        <link rel="next" href="../../Assessment/">
       
-      <link rel="icon" href="../assets/images/favicon.png">
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.4">
     
     
       
-        <title>Assessment - Introduction to Arduino Documentation</title>
+        <title>PI Control – IR with Sequence - Introduction to Arduino Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8608ea7d.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -44,22 +46,22 @@
       
     
     
-      <link rel="stylesheet" href="../css/styles.css">
+      <link rel="stylesheet" href="../../css/styles.css">
     
-      <link rel="stylesheet" href="../css/highlights.css">
+      <link rel="stylesheet" href="../../css/highlights.css">
     
-      <link rel="stylesheet" href="../css/tablesAndFigures.css">
+      <link rel="stylesheet" href="../../css/tablesAndFigures.css">
     
       <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -68,7 +70,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -86,11 +88,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#assessed-exercises" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -103,7 +100,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Introduction to Arduino Documentation" class="md-header__button md-logo" aria-label="Introduction to Arduino Documentation" data-md-component="logo">
+    <a href="../.." title="Introduction to Arduino Documentation" class="md-header__button md-logo" aria-label="Introduction to Arduino Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -123,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Assessment
+              PI Control – IR with Sequence
             
           </span>
         </div>
@@ -224,7 +221,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Introduction to Arduino Documentation" class="md-nav__button md-logo" aria-label="Introduction to Arduino Documentation" data-md-component="logo">
+    <a href="../.." title="Introduction to Arduino Documentation" class="md-nav__button md-logo" aria-label="Introduction to Arduino Documentation" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -242,7 +239,7 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -263,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Disclaimer/" class="md-nav__link">
+      <a href="../../Disclaimer/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -284,7 +281,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../RobotBuild/" class="md-nav__link">
+      <a href="../../RobotBuild/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -305,7 +302,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Background/" class="md-nav__link">
+      <a href="../../Background/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -348,7 +345,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../IntroMaterial/" class="md-nav__link ">
+            <a href="../../IntroMaterial/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -382,7 +379,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../IntroMaterial/SupplSignPost/" class="md-nav__link">
+      <a href="../../IntroMaterial/SupplSignPost/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../IntroMaterial/IntroExercises/" class="md-nav__link">
+      <a href="../../IntroMaterial/IntroExercises/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -463,7 +460,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../BasicExercises/" class="md-nav__link ">
+            <a href="../../BasicExercises/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -497,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BasicExercises/Ex1ledPattern/" class="md-nav__link">
+      <a href="../../BasicExercises/Ex1ledPattern/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -519,7 +516,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BasicExercises/Ex2PotCalibration/" class="md-nav__link">
+      <a href="../../BasicExercises/Ex2PotCalibration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -541,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BasicExercises/Ex3IrSensor/" class="md-nav__link">
+      <a href="../../BasicExercises/Ex3IrSensor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -563,7 +560,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BasicExercises/Ex4DriveServoMotor/" class="md-nav__link">
+      <a href="../../BasicExercises/Ex4DriveServoMotor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,7 +582,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BasicExercises/Ex5DcMotor/" class="md-nav__link">
+      <a href="../../BasicExercises/Ex5DcMotor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../BasicExercises/Ex6EncodeMotor/" class="md-nav__link">
+      <a href="../../BasicExercises/Ex6EncodeMotor/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -633,6 +630,8 @@
       
   
   
+    
+  
   
   
     
@@ -651,16 +650,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="../AdvancedExercises/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -678,7 +677,7 @@
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Advanced Exercises
@@ -694,7 +693,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../AdvancedExercises/Ex7PiIrDist/" class="md-nav__link">
+      <a href="../Ex7PiIrDist/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -716,7 +715,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../AdvancedExercises/Ex8PiEncoder/" class="md-nav__link">
+      <a href="../Ex8PiEncoder/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -735,10 +734,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../AdvancedExercises/Ex9PiIrSequence/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -748,6 +754,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -764,29 +771,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Assessment
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Assessment/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -796,42 +784,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#assessed-exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      Assessed Exercises
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#suggested-timeline-for-the-mandatory-exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      Suggested Timeline for the Mandatory Exercises
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -854,32 +806,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#assessed-exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      Assessed Exercises
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#suggested-timeline-for-the-mandatory-exercises" class="md-nav__link">
-    <span class="md-ellipsis">
-      Suggested Timeline for the Mandatory Exercises
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -894,66 +820,9 @@
 
 
 
-  <h1>Assessment</h1>
+  <h1>PI Control – IR with Sequence</h1>
 
-<h2 id="assessed-exercises">Assessed Exercises</h2>
-<p>There are 9 assessed exercises, each will build on a previous exercise. Six of these exercises are classed as “Basic” and we expect that all groups should be able to complete these using the three laboratory classes and maybe a little working outside the lab. These basic exercises are worth <problemHL>70%</problemHL> of the total assessment mark. There are also three “Advances” exercises, which are an extension to the basic exercises, and <strong>will</strong> require extra work outside the laboratory session to complete – these are worth the final <problemHL>30%</problemHL> of the assessment mark. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You must complete <strong>all</strong> the basic exercises before you can gain credit for any of the advanced exercises.</p>
-</div>
-<p><problemHL>The marks weighting for each exercise is provided in <a href="#ExWeights">Table 1</a>:</problemHL></p>
-<table>
-  <a name="ExWeights"></a>
-  <thead>
-    <tr> <th>Exercise:</th><th>Weighting:</th> </tr>
-  </thead>
-  <tbody>
-    <tr> <td><strong>Basic:</strong> LED Pattern</td><td><problemHL>15%</td> </tr>    
-    <tr> <td><strong>Basic:</strong> Calibration of Potentiometer Angle </td><td><problemHL>5%</td> </tr>    
-    <tr> <td><strong>Basic:</strong> IR Sensor Measurement + Graph</td><td><problemHL>10%</td> </tr>    
-    <tr> <td><strong>Basic:</strong> Externally Powered Servo</td><td><problemHL>10%</td> </tr>    
-    <tr> <td><strong>Basic:</strong> DC Motor</td><td><problemHL>15%</td> </tr>    
-    <tr> <td><strong>Basic:</strong> Encoders + Motor</td><td><problemHL>15%</td> </tr>    
-    <tr> <td><strong>Advanced:</strong> PI Control – Encoder Position</td><td><problemHL>10%</td> </tr>    
-    <tr> <td><strong>Advanced:</strong> PI Control – IR Sensor Distance</td><td><problemHL>10%</td> </tr>    
-    <tr> <td><strong>Advanced:</strong> PI Control – IR with Sequence</td><td><problemHL>10%</td> </tr>    
-    <tr style="font-size: large;"> <td><strong>Total</strong></td><td><strong>100%</strong></td> </tr>    
-  </tbody>
-<caption>Marks Weighting for the Introduction to Arduino Exercises.</caption>
-</table>
 
-<p>You will have three laboratory support sessions to complete these exercises, at the end of the 3rd laboratory we will stop marking. Any exercises not marked by the end of the session will not be marked. </p>
-<p>To complete all the basic exercises, you will almost certainly need to do a little work outside the laboratory sessions. To complete all the advanced exercises you will need to put in extra effort, outside the laboratory sessions, to fulfil the requirements.</p>
-<p>The system has been designed, such that it is a sequential development, where each exercise builds on previous exercises, both in terms of hardware and software. This way, you do need to dismantle your circuits between exercises allowing you to work more efficiently across exercises. </p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>When you come to build the system, you can either build it all the circuitry at the start or you can build the circuitry section by section, as you progress through the exercises. Details of the mechanical and electrical systems are provided in the <a href="../RobotBuild/">Building the Robot</a> section of this site.</p>
-</div>
-<h2 id="suggested-timeline-for-the-mandatory-exercises">Suggested Timeline for the Mandatory Exercises</h2>
-<p><a name="Timeline"></a>
-There is no rigid structure for your progress through these exercises, but the following time plan, (this is a summary of the <a href="../#Timeline">timeplan from the Introduction</a>) should be sufficient to ensure that you have time to complete all the basic exercises and have them marked by the <abbr title="Graduate Teaching Assistants">GTAs</abbr> before the end of the 3rd laboratory session.</p>
-<table>
-  <a name="ExWeights"></a>
-  <thead>
-    <tr> <th>When:</th><th>What:</th> </tr>
-  </thead>
-  <tbody>
-    <tr> <td>End of session 1</td><td>Robot Assembled and LED Pattern Marked</td> </tr>    
-    <tr> <td>Start of session 2 </td><td>POT Calibration Angle Prepared</td> </tr>    
-    <tr> <td>End of session 2</td><td>DC motor exercise completed</td> </tr>    
-    <tr> <td>Start of session 3</td><td>Encoder circuit implemented</td> </tr>    
-    <tr> <td>End of session 3 (Final Session)</td><td>All work completed and marked for the basic exercises</td> </tr>    
-
-  </tbody>
-<caption>Suggested timeline to complete the basic exercises, only.</caption>
-</table>
-
-<p>If you are planning to complete the advanced exercises, you will be required to achieve these goals quicker and have any advanced exercise marked by the end of the 3rd laboratory session. Any exercises not marked by the end of the 3rd session will not be marked, and you will lose the marks for these unmarked exercises.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You must have completed all of the basic exercises before you can receive credit for any of the advanced exercises.</p>
-</div>
 
 
 
@@ -1000,12 +869,12 @@ There is no rigid structure for your progress through these exercises, but the f
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["content.tooltips", "content.code.copy", "content.code.select", "content.code.annotate", "navigation.indexes", null], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.tooltips", "content.code.copy", "content.code.select", "content.code.annotate", "navigation.indexes", null], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
       
-        <script src="../javascripts/katex.js"></script>
+        <script src="../../javascripts/katex.js"></script>
       
         <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
       
