@@ -1,3 +1,8 @@
+body {
+    counter-reset: figureCounter;
+    counter-reset: tableCounter;
+}
+ 
  /* increment the counter for every instance of a figure or table even if it doesn't have a caption */
  figure { counter-increment: figureCounter; }
 
@@ -10,18 +15,18 @@
     width: 100%;
  }
 
- table {
-    
+ table {  
  display:table !important;
  table-layout: auto;
- counter-increment: tableCounter;
  border-spacing: 0;
  /* border-collapse: collapse; /* Collapse borders to avoid double lines */
  width: 100%;
+ counter-increment: tableCounter;
 }
 /* prepend the counter to the tabcaption content */
 table caption:before {
- content: "Table " counter(tableCounter) ": "
+
+  content: "Table " counter(tableCounter) ": "
 }  
 caption {
  caption-side: bottom; /* Places the caption below the table */
