@@ -248,7 +248,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Introduction to this Activity
     
   </span>
   
@@ -593,15 +593,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sensor-noise" class="md-nav__link">
+  <a href="#introduction-and-background" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensor Noise
+      Introduction and Background
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction and Background">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#noise-on-the-ir-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Noise on the IR sensor
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#experimental-setup-with-lolly-stick-up" class="md-nav__link">
     <span class="md-ellipsis">
       Experimental Setup with Lolly Stick up
@@ -609,13 +619,9 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#what-program-to-write" class="md-nav__link">
-    <span class="md-ellipsis">
-      What Program to Write
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -629,18 +635,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#further-notes-on-experimental-setup-and-sensor-noise" class="md-nav__link">
-    <span class="md-ellipsis">
-      Further Notes on experimental setup and Sensor Noise
+      Exercise
     </span>
   </a>
   
@@ -907,15 +904,25 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sensor-noise" class="md-nav__link">
+  <a href="#introduction-and-background" class="md-nav__link">
     <span class="md-ellipsis">
-      Sensor Noise
+      Introduction and Background
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction and Background">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#noise-on-the-ir-sensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Noise on the IR sensor
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#experimental-setup-with-lolly-stick-up" class="md-nav__link">
     <span class="md-ellipsis">
       Experimental Setup with Lolly Stick up
@@ -923,13 +930,9 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#what-program-to-write" class="md-nav__link">
-    <span class="md-ellipsis">
-      What Program to Write
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -943,18 +946,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#introduction" class="md-nav__link">
+  <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
-      Introduction
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#further-notes-on-experimental-setup-and-sensor-noise" class="md-nav__link">
-    <span class="md-ellipsis">
-      Further Notes on experimental setup and Sensor Noise
+      Exercise
     </span>
   </a>
   
@@ -977,56 +971,84 @@
 
 
 <h1 id="measure-the-output-of-the-sharp-ir-distance-sensor">Measure the Output of the Sharp <abbr title="Infra Red">IR</abbr> Distance Sensor</h1>
-<p>Current stuff is not right</p>
-<h3 id="sensor-noise">Sensor Noise</h3>
-<h3 id="experimental-setup-with-lolly-stick-up">Experimental Setup with Lolly Stick up</h3>
-<h3 id="what-program-to-write">What Program to Write</h3>
-<h3 id="expected-results">Expected Results</h3>
-<p><debugHL>Merge some of the stuff from the the Calibrating <abbr title="Infra Red">IR</abbr> sensor Document</debugHL></p>
-<h2 id="introduction">Introduction</h2>
-<p>The aim of this exercise is to generate a graph of sensor measurement from the Sharp <abbr title="Infra Red">IR</abbr> distance sensor against measurement distance. During this exerercise, you will interface the Sharp <abbr title="Infra Red">IR</abbr> distance sensor with the Arduino, record the measured voltage as a function of the distance to a target, and observe any constraints for the operation of this sensor.</p>
+<h2 id="introduction-and-background">Introduction and Background</h2>
+<p>The aim of this exercise is to generate a graph of sensor measurement from the Sharp <abbr title="Infra Red">IR</abbr> distance sensor against measurement distance. During this exercise, you will interface the Sharp <abbr title="Infra Red">IR</abbr> distance sensor with the Arduino, record the measured voltage as a function of the distance to a target, and observe any constraints for the operation of this sensor.</p>
 <div class="admonition info">
 <p class="admonition-title"><abbr title="Graduate Teaching Assistant">GTA</abbr> Marking</p>
 <p>This is an assessed Exercise. When you have completed exercise, you should show your work to a <abbr title="Graduate Teaching Assistant">GTA</abbr> to get marked.</p>
 </div>
-<p>It should be noted:</p>
-<ul>
-<li>Noise</li>
-<li>Measurement characteristic</li>
-</ul>
-<p><strong>Procedure:</strong></p>
-<p><problemHL>Check the Pinouts for this</problemHL></p>
-<ol>
-<li>The starting point for this exercise is the <debugHL><a href="../../RobotBuild/#irSensor">circuit layout for the <abbr title="Infra Red">IR</abbr> sensor</a></debugHL> and the potentiometer code, <a href="../Ex1ledPattern/#potInoCode">POT.ini</a>, located at the end of the <a href="../Ex1ledPattern/"><abbr title="Light Emitting Diode">LED</abbr> pattern exercise</a>.</li>
-</ol>
+<p>Before you start this exercise, you will need to construct the circuit according to <debugHL><a href="../../RobotBuild/#irSensor">the <abbr title="Infra Red">IR</abbr> sensor circuit instructions</a></debugHL> in the <debugHL><a href="../../RobotBuild/">Building the Robot Document</a></debugHL>.</p>
+<h3 id="noise-on-the-ir-sensor">Noise on the <abbr title="Infra Red">IR</abbr> sensor</h3>
+<p>The <abbr title="Infra Red">IR</abbr> sensor is not an ideal sensor and induces noise onto the output of the sensor, as shown in <debugHL><a href="#irWithNoise">Fig 1</a></debugHL>.</p>
+<figure>
+  <a name="irWithNoise"></a>
+  <a class="glightbox" href="../../Images/SerialPlotter-irWithNoise.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Serial Plotter Showing Noise on the IR distance sensor." src="../../Images/SerialPlotter-irWithNoise.png" /></a>
+  <figcaption>Serial Plotter Showing Noise on the <abbr title="Infra Red">IR</abbr> distance sensor.</figcaption>
+</figure>
+<p>A <debugHL><a href="https://en.wikipedia.org/wiki/Moving_average">simple moving averaging</a></debugHL> filter technique can be used on the data to reduce the noise content of the signal. A simple, but effective, implementation of this technique is shown in the Averaging Code, below:</p>
+<p><div class="language-Arduino highlight"><span class="filename">Averaging Code</span><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1">//Read the IR sensor</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">irVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">irPin</span><span class="p">);</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="c1">// accumulate a further 7 readings</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="n">irVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irVal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">irPin</span><span class="p">);</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="n">irVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irVal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">irPin</span><span class="p">);</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="n">irVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irVal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">irPin</span><span class="p">);</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="n">irVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irVal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">irPin</span><span class="p">);</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="n">irVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irVal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">irPin</span><span class="p">);</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="n">irVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irVal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">irPin</span><span class="p">);</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="n">irVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irVal</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nf">analogRead</span><span class="p">(</span><span class="n">irPin</span><span class="p">);</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="c1">// right shift 3 places to divide by 8</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="n">irVal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">irVal</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="mi">3</span><span class="p">;</span>
+</span></code></pre></div>
+The Averaging Code, above, sums the result of 8 <abbr title="Analogue to Digital Converter">ADC</abbr> readings of the <abbr title="Infra Red">IR</abbr> sensor and take the average value of these readings. This is a crude, but effective method for noise reduction, in this instance. The results of this implementation can be seen from the data shown in <debugHL><a href="#averagedIrSensor">Fig 2</a></debugHL>.</p>
+<figure>
+  <a name="averagedIrSensor"></a>
+  <a class="glightbox" href="../../Images/SerialPlotter-irWithAveraging.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Serial Plotter Showing the Averaged IR Sensor Data." src="../../Images/SerialPlotter-irWithAveraging.png" /></a>
+  <figcaption>Serial Plotter Showing the Averaged <abbr title="Infra Red">IR</abbr> Sensor Data.</figcaption>
+</figure>
+<p>Camparing the magnitude of the noise on the <abbr title="Infra Red">IR</abbr> sensor measurement, between <debugHL><a href="#irWithNoise">Fig 1</a></debugHL> and <debugHL><a href="#averagedIrSensor">Fig 2</a></debugHL> it can be seen that this averaging technique has significantly reduced the sensor noise. </p>
+<h3 id="experimental-setup-with-lolly-stick-up">Experimental Setup with Lolly Stick up</h3>
+<p>The <abbr title="Infra Red">IR</abbr> sensor is sensitive to picking up reflections from any surface that it is operating. It has been found from experimentation, that raising the sensor above the surface that it is operating produces improved and more consistant results.</p>
+<p>As a result, when using the <abbr title="Infra Red">IR</abbr> sensor, you should ensure that the lolly stick assembly is in the upright position, as shown in the righthand figure in the <debugHL><a href="../../RobotBuild/#LollyUp">Building the Robot document</a></debugHL></p>
 <p>For more details on concerning the pin connections for the Sharp GP2Y0A21YK0F distance measurement sensor, see the data sheet for the sensor on the Blackboard site:</p>
 <ul>
 <li><debugHL>ACS231 Blackboards Site&gt;&gt;Mechatronics Kit Information&gt;&gt; Component Data Sheets and Technical Documentation.</debugHL></li>
 </ul>
-<ol start=2>
+<h2 id="expected-results">Expected Results</h2>
+<p>The <abbr title="Infra Red">IR</abbr> sensor has a non-linear distance to output voltage characteristic, as illustrated in <debugHL><a href="#irSensorDist">Fig 3</a></debugHL>. This graph has been provided as an example characteristic for how your data should come out...except that your results should have a y-axis scale!</p>
+<figure>
+  <a name="irSensorDist"></a>
+  <a class="glightbox" href="../../Images/Expected%20IR%20Sensor%20Result.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Characteristic measurement result from the IR distance sensor." src="../../Images/Expected%20IR%20Sensor%20Result.png" /></a>
+  <figcaption>Characteristic measurement result from the <abbr title="Infra Red">IR</abbr> distance sensor.</figcaption>
+</figure>
+<h2 id="exercise">Exercise</h2>
+<p>For this exercise you will write an Arduino sketch to measure the output of the <abbr title="Infra Red">IR</abbr> sensor and display its value of on the serial monitor. The distance measurements should be taken at static positions, using a series of measurement points similar to:</p>
+<p>1cm, 2cm, 3cm, 4cm, 5cm, 6cm, 7cm, 8cm, 9cm, 10cm, 15cm, 20cm, 25cm, 30cm, 35cm, 40cm, 45cm, 50cm, 55cm, 60cm, 65cm, 70cm, 75cm, and 80cm</p>
+<p>You should plot your results in a computer package, such as Excel or MATLAB, with the x-axis as the distance measured, and the y-axis as the <abbr title="Analogue to Digital Converter">ADC</abbr> measurement value. </p>
+<p><strong>Procedure:</strong></p>
+<ol>
+  <li> The starting point for this exercise is the <debugHL><a href = ../../RobotBuild#irSensor>circuit layout for the IR sensor</a></debugHL> and the potentiometer code, <debugHL><a href =../Ex1ledPattern#potInoCode>POT.ini</a></debugHL> located at the end of the <debugHL><a href =../Ex1ledPattern>LED pattern exercise</a></debugHL>.</li>
+
   <li> Write an Arduino sketch to read the analogue measurement value from the IR distance sensor and display the reading on the serial monitor. (It is acceptable to use a fresh copy of the <debugHL><a href = ../Ex1ledPattern/#potInoCode>POT.ini</a></debugHL> as a template for this exercise.)</li>
 </ol>
 
 <p>Once you have the measured value of the distance sensor being streamed to the serial monitor, you will be required to plot the distance sensor measurement value against distance measured, (with a ruler/scale).</p>
-<p>During the development of this exercise, I briefly documented the setup I used to achieve this and have placed this document in the Blackboard for this laboratory. <problemHL>The Calibrating the <abbr title="Infra Red">IR</abbr> sensor document</problemHL> contains several pointers for physical setup, software implementation and expected characteristic. </p>
-<ol start=4>
-  <li> Perform an experiment to characterise the Sharp IR sensor between 1cm and 80cm distance. The results from this experiment should be a graph of the ADC measurement value from the Sharp IR distance sensor, against the target distance. (See the Experimental Results section of the <problemHL>“Calibrating the IR sensor”</problemHL> document for a suggestion for distance point spacing).</li>
+<ol start=3>
+  <li> Perform an experiment to characterise the Sharp IR sensor between 1cm and 80cm distance. The results from this experiment should be a graph of the ADC measurement value from the Sharp IR distance sensor, against the distance from the target. Note: Your graph should have a similar characteristic to that shown in <debugHL><a href = ./#irSensorDist>Fig 3</a></debugHL>.</li>
 </ol>
 
-<p>You should plot your results in a computer package, such as Excel or MATLAB, with the x-axis as the distance measured, and the y-axis as the <abbr title="Analogue to Digital Converter">ADC</abbr> measurement value. You must record the data values, because you will need them for <problemHL>Exercise 5.</problemHL></p>
-<p>I would recommend using a series of measurement points similar to:</p>
-<p>1cm, 2cm, 3cm, 4cm, 5cm, 6cm, 7cm, 8cm, 9cm, 10cm, 15cm, 20cm, 25cm, 30cm, 35cm, 40cm, 45cm, 50cm, 55cm, 60cm, 65cm, 70cm, 75cm, and 80cm</p>
-<p>(Note: on your plotted graph, you should include a title and axes labels for both the x-axis and the y-axis)</p>
-<p><strong>When completed, your code should allow you to run an experiment to draw the following graph:</strong>
-<debugHL><ul><li><debugHL>A graph of <abbr title="Analogue to Digital Converter">ADC</abbr> measurement value against distance.</debugHL></li></p>
-<li><debugHL>The trace should be correctly framed within the axes.</debugHL></li>
-<li><debugHL>Appropriate axes labels, with units and a descriptive graph title.</debugHL></li>
-</ol>
+<p><strong>When completed, your code should allow you to run an experiment to draw the following graph:</strong></p>
+<ul>
+<li>A graph of <abbr title="Analogue to Digital Converter">ADC</abbr> measurement value against distance.</li>
+<li>The trace should be correctly framed within the axes.</li>
+<li>Appropriate axes labels, with units and a descriptive graph title.
+You should plot your results in a computer package, such as Excel or MATLAB, with the x-axis as the distance measured, and the y-axis as the <abbr title="Analogue to Digital Converter">ADC</abbr> measurement value, as illustrated in <debugHL><a href="#irSensorDist">Fig 3</a></debugHL></li>
+</ul>
 <div class="admonition success">
 <p class="admonition-title">Now Get Your Work Marked by a <abbr title="Graduate Teaching Assistant">GTA</abbr></p>
 <p>Once you have completed your code and are satisfied with its operation, you should show your work to a <abbr title="Graduate Teaching Assistant">GTA</abbr> for marking.</p>
 </div>
-<h2 id="further-notes-on-experimental-setup-and-sensor-noise">Further Notes on experimental setup and Sensor Noise</h2>
 
 
 

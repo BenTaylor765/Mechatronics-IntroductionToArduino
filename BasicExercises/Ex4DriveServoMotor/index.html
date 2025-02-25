@@ -248,7 +248,7 @@
         
   
   <span class="md-ellipsis">
-    Introduction
+    Introduction to this Activity
     
   </span>
   
@@ -964,6 +964,14 @@
 <p>Servomotors can drain a lot of current, especially when changing direction. When multiple servos are connected, it is better to use an external power supply (battery or <abbr title="This will be provided on request with lab staff, nominally one per group">AC-DC Plug-in Power Supply</abbr>) to avoid either damaging the Arduino board or to problems caused by the Arduino <abbr title="Universal Serial Bus">USB</abbr> connection limiting the available current on the 5V power supply. </p>
 <p>See later in this section for more details.</p>
 </div>
+<p>The following video is a quick demonstration of the final outcome from this exercise:</p>
+<figure>
+<div style="text-align: center;">
+<iframe id="kaltura_player" src='https://cdnapisec.kaltura.com/p/2103181/embedPlaykitJs/uiconf_id/53345422?iframeembed=true&amp;entry_id=1_a3eviyhm&amp;config%5Bprovider%5D=%7B%22widgetId%22%3A%221_4q6vxp1v%22%7D&amp;config%5Bplayback%5D=%7B%22startTime%22%3A0%7D'  style="width: 400px;height: 285px;border: 0;justify-content:center;" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation" title="Placeholder - Quick Test Video"></iframe>
+</div>
+<figcaption>Video demonstrating the expected outcome from this exercise</figcaption>
+</figure>
+
 <h3 id="controlling-a-standard-servomotor-directly-from-the-arduino-informal-exercise">Controlling a Standard Servomotor directly from the Arduino. (Informal Exercise)</h3>
 <p><a name="mg90Servo"></a>
 The MG90 is a very low power servo motor and can be driven directly from the Arduino board power supply, without the need for an external supply. If you attempt this with the MG996 servo, you may find that the current draw is too great, and this may cause glitches in the power supply lines that cause the Arduino to "<debugHL><a href="https://www.allaboutcircuits.com/technical-articles/what-is-brown-out-reset-microcontroller-prevent-false-power-down/" title="Link to an article on the All About Circuits website">Brownout reset</a></debugHL>”. For the remainder of this exercise, we will use the MG90.</p>

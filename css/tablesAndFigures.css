@@ -1,14 +1,16 @@
-body {
-    counter-reset: figureCounter;
-    counter-reset: tableCounter;
+
+body { 
+  counter-reset: figureCounter;
+  counter-reset: tableCounter;
 }
- 
- /* increment the counter for every instance of a figure or table even if it doesn't have a caption */
- figure { counter-increment: figureCounter; }
+
+/* increment the counter for every instance of a figure or table even if it doesn't have a caption */
+ figure { counter-increment: figureCounter; 
+}
 
  /* prepend the counter to the figcaption content */
- figure figcaption:before {
-     content: "Fig " counter(figureCounter) ": "
+ figure figcaption::before {
+     content: "Fig " counter(figureCounter) ": ";
  }  
  
  .md-typeset__table{
@@ -16,25 +18,25 @@ body {
  }
 
  table {  
- display:table !important;
- table-layout: auto;
- border-spacing: 0;
- /* border-collapse: collapse; /* Collapse borders to avoid double lines */
- width: 100%;
- counter-increment: tableCounter;
+   display:table !important;
+   table-layout: auto;
+   border-spacing: 0;
+   border-collapse: collapse; /* Collapse borders to avoid double lines */
+   width: 100%;
+   
+   /* prepend the counter to the tableCounter content */
+   caption:before {
+    counter-increment: tableCounter;
+    content: "Table " counter(tableCounter) ": ";
+  }  
 }
-/* prepend the counter to the tabcaption content */
-table caption:before {
-
-  content: "Table " counter(tableCounter) ": "
-}  
 caption {
- caption-side: bottom; /* Places the caption below the table */
- text-align: center; /* Optional: Center the caption text */
- font-style: italic; font-weight: bold; /* Optional: Style the caption */
- padding-top: 10px;   /* Optional: Add some spacing above the caption */
- font-family: 'Arial', sans-serif;
- font-size:medium
+  caption-side: bottom; /* Places the caption below the table */
+  text-align: center; /* Optional: Center the caption text */
+  font-style: italic; font-weight: bold; /* Optional: Style the caption */
+  padding-top: 10px;   /* Optional: Add some spacing above the caption */
+  font-family: 'Arial', sans-serif;
+  font-size:medium;
 }
 
 th, td {
