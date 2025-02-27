@@ -23,7 +23,8 @@ body {
    border-spacing: 0;
    border-collapse: collapse; /* Collapse borders to avoid double lines */
    width: 100%;
-   
+   vertical-align:middle;
+
    /* prepend the counter to the tableCounter content */
    caption:before {
     counter-increment: tableCounter;
@@ -40,8 +41,9 @@ caption {
 }
 
 th, td {
- border: 1px solid black; /* Add borders to cells */
- padding: 0;
- text-align: left; /* Or center, right, as needed */
- font-weight:unset;
+  vertical-align:middle;
+  border: 1px solid black; /* Add borders to cells */
+  padding: 0;
+  text-align: left; /* Or center, right, as needed */
+  font-weight:unset;
 }

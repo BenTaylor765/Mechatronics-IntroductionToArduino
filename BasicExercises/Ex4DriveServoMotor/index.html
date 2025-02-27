@@ -306,27 +306,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../Background/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Background Material
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
       
@@ -345,7 +324,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
           
@@ -362,14 +341,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Introductory and Supplementary Material
           </label>
@@ -462,7 +441,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           
@@ -479,14 +458,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Basic Exercises
           </label>
@@ -738,7 +717,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
           
@@ -755,14 +734,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Advanced Exercises
           </label>
@@ -948,21 +927,13 @@
 
   <h1>Driving a Servo Motor</h1>
 
-<h2 id="introduction">Introduction</h2>
-<p>The aim of this exercise is to demonstrate the control of a position control servo, in this case the MG90 servomotor. The MG90 is a very low power servo motor and can be driven directly from the Arduino board power supply.</p>
 <div class="admonition info">
 <p class="admonition-title"><abbr title="Graduate Teaching Assistant">GTA</abbr> Marking</p>
-<p>The final pert of this activity is an assessed Exercise: <debugHL>What's its Name?</debugHL></p>
-<p>When you have completed this exercise you should show your work to a <abbr title="Graduate Teaching Assistant">GTA</abbr> to get marked.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Transitioning to MG90 Servo Motors</p>
-<p>We are transitioning away from SG90 servos due to robustness issues and replacing these with MG90 servos. Some of you may still find that you have an SG90 servo in your kit – this is OK, you can use this device with same wiring, fixtures, and code.</p>
+<p>This is an assessed Exercise. When you have completed the <a href="#ServoExercise">Assessed Exercise</a>, you should show your work to a <abbr title="Graduate Teaching Assistant">GTA</abbr> to get marked.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Servomotors can drain a lot of current, especially when changing direction. When multiple servos are connected, it is better to use an external power supply (battery or <abbr title="This will be provided on request with lab staff, nominally one per group">AC-DC Plug-in Power Supply</abbr>) to avoid either damaging the Arduino board or to problems caused by the Arduino <abbr title="Universal Serial Bus">USB</abbr> connection limiting the available current on the 5V power supply. </p>
-<p>See later in this section for more details.</p>
+<p>Before starting these exercises, you should ensure that you have completed the circuit on the robot chassis, as suggested on <debugHL><a href="../../RobotBuild/#dcMotorPic">Building the Robot: Fig. 12</a></debugHL>. Furthermore, you should ensure that all the connections described in the <a href="../../RobotBuild/#dcMotor">Building the Robot: Circuit Layout for the Externally Powered Servo Exercise</a> are correct.</p>
 </div>
 <p>The following video is a quick demonstration of the final outcome from this exercise:</p>
 <figure>
@@ -972,9 +943,15 @@
 <figcaption>Video demonstrating the expected outcome from this exercise</figcaption>
 </figure>
 
+<h2 id="introduction">Introduction</h2>
+<p>The aim of this exercise is to demonstrate the control of a position control servo, in this case the MG90 servomotor. The MG90 is a very low power servo motor and can be driven directly from the Arduino board power supply.</p>
 <h3 id="controlling-a-standard-servomotor-directly-from-the-arduino-informal-exercise">Controlling a Standard Servomotor directly from the Arduino. (Informal Exercise)</h3>
-<p><a name="mg90Servo"></a>
-The MG90 is a very low power servo motor and can be driven directly from the Arduino board power supply, without the need for an external supply. If you attempt this with the MG996 servo, you may find that the current draw is too great, and this may cause glitches in the power supply lines that cause the Arduino to "<debugHL><a href="https://www.allaboutcircuits.com/technical-articles/what-is-brown-out-reset-microcontroller-prevent-false-power-down/" title="Link to an article on the All About Circuits website">Brownout reset</a></debugHL>”. For the remainder of this exercise, we will use the MG90.</p>
+<p><a name="mg90Servo"></a></p>
+<div class="admonition info">
+<p class="admonition-title">Transitioning to MG90 Servo Motors</p>
+<p>We are transitioning away from SG90 servos due to robustness issues and replacing these with MG90 servos. Some of you may still find that you have an SG90 servo in your kit – this is OK, you can use this device with same wiring, fixtures, and code.</p>
+</div>
+<p>The MG90 is a very low power servo motor and can be driven directly from the Arduino board power supply, without the need for an external supply. If you attempt this with the MG996 servo, you may find that the current draw is too great, and this may cause glitches in the power supply lines that cause the Arduino to "<debugHL><a href="https://www.allaboutcircuits.com/technical-articles/what-is-brown-out-reset-microcontroller-prevent-false-power-down/" title="Link to an article on the All About Circuits website">Brownout reset</a></debugHL>”. For the remainder of this exercise, we will use the MG90.</p>
 <div class="admonition note">
 <p class="admonition-title">Note on the following Informal Exercise</p>
 <p>The exercise is a legacy exercise from a previous iteration of this course and required an unconnected Arduino and a MG90 servo, i.e. not connected into your robot chassis, as shown in <debugHL><a href="#simpleServo">Fig. 1</a></debugHL>.</p>
@@ -1100,6 +1077,7 @@ The MG90 is a very low power servo motor and can be driven directly from the Ard
   <a class="glightbox" href="../../Images/DCpower.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Annotated picture of the external power supply connector pins" src="../../Images/DCpower.jpg" /></a>
   <figcaption>Annotated picture of the external power supply connector pins.</figcaption>
 </figure>
+<p><a name = "ServoExercise"></a></p>
 <h2 id="assessed-exercise-driving-the-mg996-servo-on-the-front-of-the-robot-chassis">Assessed Exercise: Driving the MG996 Servo on the front of the Robot Chassis</h2>
 <div class="admonition note">
 <p class="admonition-title">Before Starting This Exercise</p>
