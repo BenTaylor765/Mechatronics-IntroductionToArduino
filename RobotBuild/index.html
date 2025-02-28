@@ -1324,7 +1324,7 @@ To overcome this problem, we will use an additional external DC power supply to 
 <p>There are two +5V power supplies on the robot chassis:</p>
 <ol>
 <li>The +5V supply from the Arduino</li>
-<li>The external +5V from the <abbr title="This will be provided on request with lab staff, nominally one per group">AC-DC Plug-in Power Supply</abbr>.</li>
+<li>The external +5V from the AC-DC Plug-in Power Supply.</li>
 </ol>
 <p><span style="font-weight:bolder;color:red;">UNDER NO CIRCUMSTANCE</span> should the +5V lines of these power supplied be connected together. You must, however, connect all the <abbr title="Electrical Ground or 0V">GND</abbr> lines of these power supplies, and other systems, to a common <abbr title="Electrical Ground or 0V">GND</abbr> net/node on your robot chassis to ensure that all the working from the same reference voltage.</p>
 <p>The external +5V should only be connected to the V<sub>m</sub> connection of the motor drive board and the V+ power connections of any servo used on your system. The Arduino +5V should be used for the V<sub>cc</sub> connection of the motor drive board and any other connection requiring +5V, <span style=color:red;>which is not connected to the external +5V</span>.</p>
